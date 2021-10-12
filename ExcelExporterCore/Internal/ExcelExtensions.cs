@@ -1,16 +1,18 @@
-﻿using ExcelExporterCore.Internal;
+﻿using System.Runtime.Versioning;
+using ExcelExporterCore.Internal;
 using Microsoft.Office.Interop.Excel;
 
 namespace ExcelExporterCore
 {
-    internal static class ExcelInteropExtensions
+    [SupportedOSPlatform("windows")]
+    internal static class ExcelExtensions
     {
         /// <summary>
         /// 指定した <see cref="Worksheet"/> の使用範囲を、エクセル表現の範囲文字列に変換します。
         /// </summary>
         public static string GetRangeString(this Worksheet worksheet)
         {
-            using (var rangeScope = worksheet.UsedRange.AsWrappedDisposable())
+            using (var rangeScope = worksheet.UsedRange.AsDisposable())
             {
                 return rangeScope.ComObject.GetRangeString();
             }
@@ -21,7 +23,7 @@ namespace ExcelExporterCore
         /// </summary>
         public static string GetRangeString(this ListObject listObject)
         {
-            using (var rangeScope = listObject.Range.AsWrappedDisposable())
+            using (var rangeScope = listObject.Range.AsDisposable())
             {
                 return rangeScope.ComObject.GetRangeString();
             }
@@ -32,8 +34,8 @@ namespace ExcelExporterCore
         /// </summary>
         public static string GetRangeString(this Range range)
         {
-            using (var columnsScope = range.Columns.AsWrappedDisposable())
-            using (var rowsScope = range.Rows.AsWrappedDisposable())
+            using (var columnsScope = range.Columns.AsDisposable())
+            using (var rowsScope = range.Rows.AsDisposable())
             {
                 var column = range.Column;
                 var row = range.Row;

@@ -19,7 +19,7 @@ namespace ExcelExporterCore
                 throw new ArgumentOutOfRangeException(nameof(row), $"{nameof(row)} には 1 以上の値を渡す必要があります。");
 
             return $"{GetColumnText(column)}{row}";
-            string GetColumnText(int value)
+            static string GetColumnText(int value)
             {
                 if (value < 1)
                 {
