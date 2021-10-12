@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using Microsoft.Office.Interop.Excel;
 
-namespace ExcelExporter.Core.Internal
+namespace ExcelExporterCore.Internal
 {
     /// <summary>
     /// <see cref="IComObjectWrappedDisposable{T}"/> を作成するためのユーティリティを提供します。

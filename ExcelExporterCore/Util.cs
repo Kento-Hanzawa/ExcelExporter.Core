@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExcelExporter.Core
+namespace ExcelExporterCore
 {
     internal static class Util
     {

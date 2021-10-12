@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace ExcelExporter.Core
+namespace ExcelExporterCore
 {
     internal readonly struct ExcelExportResultCore
     {

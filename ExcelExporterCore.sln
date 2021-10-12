@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelExporter.Core", "ExcelExporter.Core\ExcelExporter.Core.csproj", "{6AB851E2-7ECC-4320-BF0C-260D08A30C95}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B4BD3E9A-206A-4C53-8FC4-857E61FF41D9}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -13,16 +11,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B4BD3E9A-2
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelExporterCore", "ExcelExporterCore\ExcelExporterCore.csproj", "{74F4D18A-6849-4EAB-8104-F2706B11B85B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6AB851E2-7ECC-4320-BF0C-260D08A30C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AB851E2-7ECC-4320-BF0C-260D08A30C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AB851E2-7ECC-4320-BF0C-260D08A30C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AB851E2-7ECC-4320-BF0C-260D08A30C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F4D18A-6849-4EAB-8104-F2706B11B85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F4D18A-6849-4EAB-8104-F2706B11B85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F4D18A-6849-4EAB-8104-F2706B11B85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F4D18A-6849-4EAB-8104-F2706B11B85B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

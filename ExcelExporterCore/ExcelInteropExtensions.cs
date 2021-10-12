@@ -1,7 +1,7 @@
-﻿using ExcelExporter.Core.Internal;
+﻿using ExcelExporterCore.Internal;
 using Microsoft.Office.Interop.Excel;
 
-namespace ExcelExporter.Core
+namespace ExcelExporterCore
 {
     internal static class ExcelInteropExtensions
     {
