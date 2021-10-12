@@ -1,7 +1,7 @@
 ﻿using Microsoft.Office.Interop.Excel;
-using ExcelExporter.Core.Internal;
+using ExcelExporterCore.Internal;
 
-namespace ExcelExporter.Core
+namespace ExcelExporterCore
 {
     internal sealed class RangeInfo
     {

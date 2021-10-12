@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reactive.Disposables;
-using ExcelExporter.Core.Internal;
+using ExcelExporterCore.Internal;
 using Microsoft.Office.Interop.Excel;
 
-namespace ExcelExporter.Core
+namespace ExcelExporterCore
 {
     internal sealed class ExcelPackageCore : IDisposable
     {

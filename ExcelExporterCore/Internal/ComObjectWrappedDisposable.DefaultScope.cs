@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace ExcelExporter.Core.Internal
+namespace ExcelExporterCore.Internal
 {
     partial class ComObjectWrappedDisposable
     {
